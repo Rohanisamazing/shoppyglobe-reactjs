@@ -11,7 +11,7 @@ const ProductItem = ({ product }) => {
     dispatch(addToCart(product));
     setMessage("Product added to cart! Successfully ✅");
     
-    // Hide message after 2 seconds
+    // Hide message after 2 seconds is run here
     setTimeout(() => setMessage(""), 2000);
   };
 
@@ -31,7 +31,7 @@ const ProductItem = ({ product }) => {
 
       <Link to={`/product/${product.id}`} className="text-blue-500 font-medium ml-8 hover:text-black underline ml-3">View Details</Link>
 
-      {/* Success Message */}
+      {/* Success Message is displayed here */}
       {message && <p className="text-green-600 text-sm mt-2">{message}</p>}
     </div>
   );
