@@ -12,7 +12,7 @@ const Cart = () => {
         <p className="text-gray-600">Your cart is empty.</p>
       ) : (
         <>
-        {/* Unique key using item.id */}
+        {/* Unique key using item.id via map functions*/}
           {cartItems.map((item) => <CartItem key={item.id} item={item} />)}   
           <Link to="/checkout" className="bg-green-600 text-white px-4 py-2 rounded mt-4 inline-block">
             Proceed to Checkout
@@ -24,5 +24,3 @@ const Cart = () => {
 };
 
 export default Cart;
-
-
