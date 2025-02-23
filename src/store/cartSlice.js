@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   cartItems: [],
 };
-
+//  add to cart and remove from cart functions are created 
 const cartSlice = createSlice({
   name: "cart",
   initialState,
