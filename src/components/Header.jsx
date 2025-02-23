@@ -16,9 +16,9 @@ const Header = () => {
           </Link>
           <Link 
             to="/cart" 
-            className="bg-indigo-600 text-white px-6 py-2 rounded-full font-medium shadow-md hover:bg-green-500 transition duration-300"
+            className="bg-indigo-600 text-white px-8 py-2 rounded-full font-medium shadow-md hover:bg-green-500 transition duration-300"
           >
-            Cart
+           🛒 Cart
           </Link>
         </nav>
       </div>
