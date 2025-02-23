@@ -10,8 +10,9 @@ const ProductDetail = () => {
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [message, setMessage] = useState(""); // State for success message
+  const [message, setMessage] = useState(""); // Using State for success message
 
+// use of useEffect to fetch product details from the API using dummyjson.com
   useEffect(() => {
     const fetchProductDetail = async () => {
       try {
@@ -49,7 +50,7 @@ const ProductDetail = () => {
         />
       </div>
 
-      {/* Product Details */}
+      {/* Product Details are fetched and displayed here */}
       <div className="w-full md:w-1/2">
         <h2 className="text-3xl font-bold text-gray-800">{product.title}</h2>
         <p className="text-gray-600 text-lg mt-2">{product.description}</p>
