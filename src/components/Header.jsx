@@ -9,7 +9,7 @@ const Header = () => {
           <Link to="/" className="hover:text-indigo-400 transition duration-300">ShoppyGlobe</Link>
         </h1>
 
-        {/* Navigation */}
+        {/* Navigation  to access the cart and home page */}
         <nav className="flex items-center space-x-6">
           <Link to="/" className="text-lg hover:text-indigo-400 transition duration-300">
             Home
