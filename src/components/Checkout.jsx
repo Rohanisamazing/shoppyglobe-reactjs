@@ -20,7 +20,7 @@ const Checkout = () => {
   };
 
   const validateEmail = (email) => {
-    // Basic email validation regex
+    // Basic email validation regex if user keeps empty email field
     const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return regex.test(email);
   };
@@ -37,7 +37,7 @@ const Checkout = () => {
             <h3 className="text-lg font-semibold">Total Amount: <span className="text-blue-600">${totalAmount.toFixed(2)}</span></h3>
           </div>
 
-          {/* Customer Info Form */}
+          {/* Customer Info Form to fill in there personal details via */}
           <form className="space-y-4">
             <input
               type="text"
